@@ -1,0 +1,493 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+figure {
+    width: fit-content;
+    height: fit-content;
+}
+video, iframe {
+    display: block;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    font-size: 15px;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+header .top {
+    width: calc(100% - 300px);
+    display: flex;
+    margin: auto;
+}
+header img {
+    margin: auto;
+}
+header h1 span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    overflow: hidden;
+}
+header .menu {
+    margin: auto;
+}
+header ul, li {
+    float: left;
+    margin: auto 3.5vw;
+    font-size: 1.2rem;
+}
+header .icon {
+    margin: auto;
+}
+header .icon a {
+    margin: auto 1vw;
+}
+#carouselExampleSlidesOnly{
+    margin-bottom: 30vh;
+}
+#carouselExampleSlidesOnly img {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+.section1 {
+    margin-bottom: 30vh;
+}
+section .section1 .row .col-12{
+    text-align: center;
+}
+section .section1 .row .col-12 h2 {
+    margin: 3vh auto;
+    font-size: 3em;
+}
+section .section2 {
+    background-image: url(../images/section2.jpg);
+    background-size: cover;
+    margin-bottom: 5vh;
+}
+section .section2 .row .col-10 h2{
+    font-size: 2.5em;
+     font-weight: 600;
+     margin: 4vh 0;
+     color: white;
+}
+section .section2 .row span {
+    display: block;
+    width: 750px;
+    border-bottom: 2px solid white;
+}
+section .section2 .row .col-10 p{
+    margin: 4vh 0;
+    color: white;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+.section3 {
+    margin-bottom: 30vh;
+}
+.section3 p{
+    font-size: 1.5em;
+    line-height: 4vh;
+}
+main .section4 {
+    margin-bottom: 15vh;
+}
+main .container .row .col-12 h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 5vh 0;
+}
+main .container .row .col-12 p {
+    font-size: 1.2em;
+    margin-bottom: 10vh;
+}
+main .row .col-5 h3 {
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-top: 2vh;
+}
+main .section4 .row .col-5 p {
+    margin-top: 11vh;
+    text-align: center;
+    color: white;
+}
+main .row .num1 {
+    background-image: url(../images/플로럴.jpg);
+    background-size: cover;
+    margin: 1vh;
+}
+main .row .num2 {
+    background-image: url(../images/프레쉬.jpg);
+    background-size: cover;
+    margin: 1vh;
+}
+main .row .num3 {
+    background-image: url(../images/우디.jpg);
+    background-size: cover;
+    margin: 1vh;
+}
+main .row .num4 {
+    background-image: url(../images/오퓰런트.jpg);
+    background-size: cover;
+    margin: 1vh;
+}
+main .slide {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 30vh;
+}
+main .slide .slide_box {
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .slide .slide_box p {
+    margin-right: 6vw;
+}
+aside {
+    width: 100%;
+    margin-bottom: 30vh;
+}
+aside .title {
+    text-align: center;
+    margin-bottom: 7vh;
+}
+aside .title h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+aside .title p {
+    font-size: 1em;
+}
+aside .container .row .col-6 p {
+    text-align: center;
+    font-size: 1em;
+}
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #252525;
+}
+footer .alllist {
+    width: calc(100% - 300px);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: auto;
+}
+footer .alllist .list {
+    margin: 0 auto;
+}
+footer .alllist .list h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 30px;
+}
+footer .alllist .list span {
+    display: block;
+    width: 13vw;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+}
+footer .alllist .list li,
+footer .alllist .list p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+footer .alllist .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .alllist .list ul li{
+    text-align: left;
+    display: block;
+    margin: 1vh 0;
+}
+
+
+ @media screen and (max-width:1200px){
+    header ul, li {
+        float: left;
+        margin: auto 2.2vw;
+        font-size: 1.2rem;
+    }
+    section .section1 .row .col-12 h2 {
+        margin: 3vh auto;
+        font-size: 2.5em;
+    }
+    section .section2 .row .col-10 h2{
+        font-size: 2em;
+        font-weight: 600;
+        margin: 3vh 0;
+    }
+    section .section2 .row span {
+        display: block;
+        width: 700px;
+        border-bottom: 2px solid white;
+    }
+    section .section2 .row .col-10 p{
+        margin: 3vh 0;
+        color: white;
+        font-size: 1.2em;
+        line-height: 30px;
+    }
+    section .section3 .row p {
+        font-size: 1.2em;
+        line-height: 3vh;
+    }
+    main .section4 .row .col-12 h2 {
+        font-size: 2.3em;
+    }
+    main .container .row .col-12 p {
+        font-size: 1.2em;
+        margin-bottom: 10vh;
+    }
+    footer {
+        width: 100%;
+        height: 110vh;
+    }
+    footer .alllist {
+        width: 90%;
+        height: 100%;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+    footer .alllist .list span {
+        display: block;
+        width: 25vw;
+        border-bottom: 1px solid white;
+        margin: 30px 0;
+    }
+    footer .alllist .last span {
+        display: block;
+        width: 37vw;
+        border-bottom: 1px solid white;
+        margin: 30px 0;
+    }
+    footer .alllist .last {
+        margin-left: 11vw;
+    }
+}
+
+@media screen and (max-width:992px){
+    header .top {
+        width: 90%;
+        margin: auto;
+    }
+    header .top .menu ul li {
+        font-size: 1em;
+        margin: auto 2vw;
+    }
+    section .section1 .row .col-12 h2 {
+        font-size: 2.5em;
+    }
+    section .section2 .row .col-10 h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 2.5vh 0;
+    }
+    section .section2 .row span {
+        display: block;
+        width: 600px;
+        border-bottom: 2px solid white;
+    }
+    section .section2 .row .col-10 p{
+        margin: 2.5vh 0;
+        color: white;
+        font-size: 1em;
+        line-height: 30px;
+    }
+    section .section3 .row p {
+        font-size: 1.1em;
+        line-height: 2vh;
+    }
+    main .section4 .row .col-12 h2 {
+        font-size: 2em;
+    }
+    main .container .row .col-12 p {
+        font-size: 1.1em;
+        margin-bottom: 10vh;
+    }
+    footer {
+        width: 100%;
+        height: 110vh;
+    }
+    footer .alllist {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:768px) {
+    header ul {
+        display: none;
+    }
+    header .top {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+    #carouselExampleSlidesOnly {
+        margin-bottom: 15vh;
+    }
+    section .section1 {
+        margin-bottom: 20vh;
+    }
+    section .section1 .row .col-12 h2 {
+        font-size: 2.3em;
+    }
+    section .section1 .row .col-12 p {
+        font-size: 0.9em;
+    }
+    section .section2 .row .col-10 h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+        margin: 2.3vh 0;
+    }
+    section .section2 .row span {
+        display: block;
+        width: 450px;
+        border-bottom: 2px solid white;
+    }
+    section .section2 .row .col-10 p{
+        margin: 2vh 0;
+        color: white;
+        font-size: 1em;
+        line-height: 25px;
+    }
+    section .section3 {
+        margin-bottom: 20vh;
+    }
+    section .section3 .row p {
+        font-size: 0.8em;
+        line-height: 1.5vh;
+    }
+    main .section4 .row .col-5 h3 {
+        font-size: 1.7em;
+    }
+    main .section4 .row .col-5 p {
+        font-size: 0.9em;
+        margin-top: 10vh;
+    }
+    footer .alllist .list span {
+        display: block;
+        width: 25vw;
+        border-bottom: 1px solid white;
+        margin: 30px 0;
+    }
+    footer .alllist .list h2 {
+        font-size: 1.3em;
+    }
+    footer .alllist .list li {
+        font-size: 1em;
+    }
+    footer .alllist .last {
+        margin-left: 12vw;
+    }
+    footer .alllist .last span {
+        display: block;
+        width: 40vw;
+        border-bottom: 1px solid white;
+        margin: 30px 0;
+    }
+}
+    @media screen and (max-width:576px){
+        section .section1 .row .col-12 h2 {
+            font-size: 2em;
+        }
+        section .section1 .row .col-12 p {
+            font-size: 0.9em;
+        }
+        section .section2 .row .col-10 h2 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 2vh 0;
+        }
+        section .section2 .row span {
+            display: block;
+            width: 400px;
+            border-bottom: 2px solid white;
+            margin-left: 2vw;
+        }
+        section .section2 .row .col-10 p{
+            margin: 2vh 0;
+            color: white;
+            font-size: 0.9em;
+            line-height: 25px;
+        }
+        section .section3 .row .col-12 p {
+            font-size: 1em;
+            line-height: 1.7vh;
+        }
+        main .section4 .row .col-12 h2 {
+            font-size: 1.8em;
+        }
+        main .section4 .row .col-12 p {
+            font-size: 0.9em;
+            margin-top: 4vh;
+        }
+        aside .title h2 {
+            font-size: 2em;
+        }
+        .slide .sbox p {
+            font-size: 0.8em;
+        }
+        aside .title p {
+            font-size: 0.8em;
+        }
+        footer .alllist .list h2 {
+            font-size: 1.2em;
+        }
+        footer .alllist .list span {
+            display: block;
+            width: 32vw;
+            border-bottom: 1px solid white;
+            margin: 30px 0;
+        }
+        footer .alllist .last {
+            margin-left: 7vw;
+        }
+    }
+   @media screen and (max-width:450px) {
+        section .section1 .row .col-12 p {
+            text-align: left;
+        }
+    
+        .section3 .row p {
+            font-size: 0.9em;
+        } 
+        
+   }
